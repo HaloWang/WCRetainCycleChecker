@@ -1,0 +1,16 @@
+PODS:
+  - WCRetainCycleChecker (0.0.1)
+
+DEPENDENCIES:
+  - WCRetainCycleChecker (from `./WCRetainCycleChecker`)
+
+EXTERNAL SOURCES:
+  WCRetainCycleChecker:
+    :path: "./WCRetainCycleChecker"
+
+SPEC CHECKSUMS:
+  WCRetainCycleChecker: 8ca6ebd2033560ff96c99db42b09e3190af6467d
+
+PODFILE CHECKSUM: badcfd3e92c6aea907bf208b588e08c051931263
+
+COCOAPODS: 1.2.0
