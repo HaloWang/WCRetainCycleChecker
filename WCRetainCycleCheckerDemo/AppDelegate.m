@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <WCRetainCycleChecker/WCRetainCycleChecker.h>
 
 @interface AppDelegate ()
 
@@ -17,6 +18,15 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+#if DEBUG
+    [WCRetainCycleChecker setCheckDelay:2];
+    [WCRetainCycleChecker retainCycleFound:^(UIViewController *viewController) {
+        NSLog(@"⁉️");
+        NSLog(@"%@", viewController);
+    }];
+#endif
+    
     return YES;
 }
 

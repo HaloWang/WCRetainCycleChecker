@@ -1,24 +1,34 @@
 //
-//  WCUIViewControllerRetainCycleChecker.h
+//  WCRetainCycleChecker.h
 //  Pods
 //
-//  Created by 王策 on 16/5/5.
+//  Created by WangCe on 20/02/2017.
 //
 //
-
-// TODO: ⚠️ Unfinish!
 
 #import <UIKit/UIKit.h>
 
-@interface WCUIViewControllerRetainCycleChecker : NSObject
+@interface WCRetainCycleChecker : NSObject
 
 /**
-*  Set when to check retain cycle of UIViewController custom subclasses after a viewcontroller call viewDidDisappear:
-*
-*  @param delay delay, default is 4 seconds
-*/
-+ (void)setCheckDelay:(NSTimeInterval)delay;
+ Set when to check retain cycle of UIViewController custom subclasses after a viewcontroller call viewDidDisappear:
 
-+ (void)whenRetainCheckedDo:(void(^)())doSomething;
+ @param delay default is 4 seconds
+ */
++ (void)setCheckDelay:(NSTimeInterval)delay;
++ (NSTimeInterval)checkDelay;
+
+
+/**
+ Show WCRetainCycleChecker's default warning
+ */
++ (void)shouldDefaultWarning:(BOOL)showWarning;
+
+/**
+ Call when retain cycle is found in your UIViewController subclass.
+
+ @param callback set this block for your custom action.
+ */
++ (void)retainCycleFound:(void(^)(UIViewController *viewController))callback;
 
 @end

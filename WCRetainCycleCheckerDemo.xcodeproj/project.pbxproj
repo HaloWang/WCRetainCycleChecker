@@ -13,6 +13,7 @@
 		09324B0F1E5AC7470081FFC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09324B0D1E5AC7470081FFC1 /* Main.storyboard */; };
 		09324B111E5AC7470081FFC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09324B101E5AC7470081FFC1 /* Assets.xcassets */; };
 		09324B141E5AC7470081FFC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09324B121E5AC7470081FFC1 /* LaunchScreen.storyboard */; };
+		09324B201E5AD1A20081FFC1 /* RetainedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09324B1F1E5AD1A20081FFC1 /* RetainedViewController.m */; };
 		6F81A7F3E766BDB946C54083 /* libPods-WCRetainCycleCheckerDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DF930E942CC217D8D40B14D /* libPods-WCRetainCycleCheckerDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,8 @@
 		09324B101E5AC7470081FFC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09324B131E5AC7470081FFC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		09324B151E5AC7470081FFC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09324B1E1E5AD1A20081FFC1 /* RetainedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RetainedViewController.h; sourceTree = "<group>"; };
+		09324B1F1E5AD1A20081FFC1 /* RetainedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RetainedViewController.m; sourceTree = "<group>"; };
 		151CD00E7BE5FCB9222F32A8 /* Pods-WCRetainCycleCheckerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WCRetainCycleCheckerDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-WCRetainCycleCheckerDemo/Pods-WCRetainCycleCheckerDemo.release.xcconfig"; sourceTree = "<group>"; };
 		7DF930E942CC217D8D40B14D /* libPods-WCRetainCycleCheckerDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WCRetainCycleCheckerDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A609ABAA3C8B657A313C0CC2 /* Pods-WCRetainCycleCheckerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WCRetainCycleCheckerDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WCRetainCycleCheckerDemo/Pods-WCRetainCycleCheckerDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -69,6 +72,8 @@
 				09324B081E5AC7470081FFC1 /* AppDelegate.m */,
 				09324B0A1E5AC7470081FFC1 /* ViewController.h */,
 				09324B0B1E5AC7470081FFC1 /* ViewController.m */,
+				09324B1E1E5AD1A20081FFC1 /* RetainedViewController.h */,
+				09324B1F1E5AD1A20081FFC1 /* RetainedViewController.m */,
 				09324B0D1E5AC7470081FFC1 /* Main.storyboard */,
 				09324B101E5AC7470081FFC1 /* Assets.xcassets */,
 				09324B121E5AC7470081FFC1 /* LaunchScreen.storyboard */,
@@ -228,6 +233,7 @@
 			files = (
 				09324B0C1E5AC7470081FFC1 /* ViewController.m in Sources */,
 				09324B091E5AC7470081FFC1 /* AppDelegate.m in Sources */,
+				09324B201E5AD1A20081FFC1 /* RetainedViewController.m in Sources */,
 				09324B061E5AC7470081FFC1 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -387,6 +393,7 @@
 				09324B1A1E5AC7470081FFC1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
