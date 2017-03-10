@@ -30,4 +30,4 @@ Warning：<RetainedViewController: 0x7fa789f01800> still in memory after `-viewD
 
 You can also use [FBRetainCycleDetector](ttps://github.com/facebook/FBRetainCycleDetector) in `WCRetainCycleChecker.retainCycleFound` callback to get more infomation.
 
-There is also a repo called [MLeaksFinder](https://github.com/Zepo/MLeaksFinder) which is more powerful than my repo 👍.
+There is also a repo called [MLeaksFinder](https://github.com/Zepo/MLeaksFinder) which is more powerful than mine 👍.
