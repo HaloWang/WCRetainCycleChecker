@@ -18,15 +18,15 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    
-#if DEBUG
+#ifndef DEBUG
+#elif DEBUG == 0
+#else
     [WCRetainCycleChecker setCheckDelay:2];
     [WCRetainCycleChecker retainCycleFound:^(UIViewController *viewController) {
         NSLog(@"⁉️");
         NSLog(@"%@", viewController);
     }];
 #endif
-    
     return YES;
 }
 

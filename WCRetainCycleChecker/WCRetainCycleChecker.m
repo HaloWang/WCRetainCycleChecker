@@ -42,10 +42,14 @@ static BOOL _rcc_showDefaultWarning = YES;
 @implementation UIViewController (RetainCycleChecker)
 
 + (void)load {
+#ifndef DEBUG
+#elif DEBUG == 0
+#else
     static dispatch_once_t _rcc_onceToken;
     dispatch_once(&_rcc_onceToken, ^{
         [self _rcc_swizzle_methods];
     });
+#endif
 }
 
 + (void)_rcc_swizzle_methods {
