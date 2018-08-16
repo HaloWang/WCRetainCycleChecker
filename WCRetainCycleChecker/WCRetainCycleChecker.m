@@ -63,9 +63,8 @@ static BOOL _rcc_showDefaultWarning = YES;
     __weak typeof(self) weakSelf = self;
     
     dispatch_time_t time = dispatch_time(DISPATCH_TIME_NOW, (int64_t)([WCRetainCycleChecker checkDelay] * NSEC_PER_SEC));
-    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
     
-    dispatch_after(time, queue, ^{
+    dispatch_after(time, dispatch_get_main_queue(), ^{
         if (weakSelf == nil) {
             return;
         }
